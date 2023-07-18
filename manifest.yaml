@@ -3,4 +3,4 @@ applications:
     memory: 256M
     path : ./
     buildpacks:
-      - nodejs_builpack
+      - nodejs_buildpack
