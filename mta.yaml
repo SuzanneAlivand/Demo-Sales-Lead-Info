@@ -8,7 +8,7 @@ modules:
     path: ./
     parameters:
       buildpack: nodejs_buildpack
-      memory: 512
+      memory: 512M
       tasks:
         - name: task-1
           command: npm install 

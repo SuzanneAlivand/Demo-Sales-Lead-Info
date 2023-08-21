@@ -3,7 +3,9 @@ var app = express();
 var data = require("./data/sampleData.json");
 var newData = data;
 
-// set the view engine to ejs
+var { db, pgp } = require("./lib/dbConn")
+
+// set the view engine to ejsm
 app.set("view engine", "ejs");
 
 app.use(express.static(__dirname + "/scripts"));
@@ -12,7 +14,7 @@ app.use(express.static(__dirname + "/scripts"));
 
 // index page
 
-app.get("/", function(req, res) {
+app.get("/", function (req, res) {
   //Getting fresh data
   newData = data;
   if (typeof req.query.name !== "undefined") {

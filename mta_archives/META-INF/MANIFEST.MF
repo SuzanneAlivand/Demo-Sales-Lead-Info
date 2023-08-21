@@ -1,0 +1,11 @@
+manifest-Version: 1.0
+Created-By: SAP Application Archive Builder 1.2.24
+
+Name: my-nodeapp-01/data.zip
+MTA-Module: my-nodeapp-01
+Content-Type: application/zip
+
+
+Name: META-INF/mtad.yaml
+Content-Type: text/plain
+

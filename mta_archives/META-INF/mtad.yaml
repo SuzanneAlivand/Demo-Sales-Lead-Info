@@ -1,0 +1,13 @@
+_schema-version: 3.3.0
+ID: demo.sample.01
+version: 0.0.1
+modules:
+- name: my-nodeapp-01
+  type: application
+  path: my-nodeapp-01
+  parameters:
+    buildpack: nodejs_buildpack
+    memory: 512M
+    tasks:
+    - command: npm install
+      name: task-1
