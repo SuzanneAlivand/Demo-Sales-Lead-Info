@@ -1,6 +1,8 @@
-applications: 
+applications:
   - name: my-nodeapp-01
     memory: 256M
-    path : ./
+    path: ./
     buildpacks:
       - nodejs_buildpack
+    services:
+      - my-post-db
